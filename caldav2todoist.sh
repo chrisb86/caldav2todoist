@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# caldav2todoist.sh
+# caldav2todoist
 # Get tasks from a calDAV server and push them to Todoist.
 
 # Copyright 2020 Christian Baer
@@ -38,7 +38,7 @@ todoist_api_token="YOUR_TODOIST_API_TOKEN"
 todoist_api_endpoint="https://api.todoist.com/sync/v8/sync"
 
 ## Setting up the environment.
-SELF=`basename -- $0`
+SELF=`basename -- $0 .sh`
 BASEDIR=`dirname $0`
 tasks_file="${BASEDIR}/.${SELF}.tasks"
 lastrun_file="${BASEDIR}/.${SELF}.lastrun"
