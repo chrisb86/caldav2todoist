@@ -11,7 +11,7 @@ caldav2todoist is a simple shell script with no external dependencies on most mo
 It fetches the tasks from a given calDAV URL that were created since tha last run and uses the Todoist API to create the tasks in your Inbox.
 
 Just set the needed variables, put the script in your crontab and you're ready to go.
-
+```sh
 # Your calDAV user
 caldav_login="YOUR_USERNAME"
 # Your calDAV password
@@ -21,3 +21,4 @@ caldav_url="https://example.org/remote.php/dav/calendars/user/tasklist/"
 
 # Your Todoist API token (get it at https://todoist.com/prefs/integrations)
 todoist_api_token="YOUR_TODOIST_API_TOKEN"
+```
